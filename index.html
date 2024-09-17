@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To gangern</title>
+</head>
+<body>
+    <div id="numbers"></div>
+    <button onclick="twoTimes()">Vis to-gangern</button>
+
+
+    <script>
+        function twoTimes(){
+            let endCounter = 20;
+            for(let counter = 2; counter <= endCounter; counter = counter + 2){
+                document.getElementById('numbers').innerHTML += '<li>' + counter + '</li>'
+            }
+        }
+    </script>
+</body>
+</html>
